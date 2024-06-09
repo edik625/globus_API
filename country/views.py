@@ -2,6 +2,7 @@ from django.shortcuts import render
 from .models import Climat, Continent, Country
 from .serializers import ClimatSerializer, ContinetSerializer, CountrySerializer
 from rest_framework import viewsets
+from rest_framework.response import Response
 # Create your views here.
 
 
@@ -16,5 +17,11 @@ class ContinentViewSet(viewsets.ModelViewSet):
 
 
 class CountryViewSet(viewsets.ModelViewSet):
-    queryset = Continent.objects.all()
-    serializer_class = ContinetSerializer
+    queryset = Country.objects.all()
+    serializer_class = CountrySerializer
+
+
+
+
+
+    

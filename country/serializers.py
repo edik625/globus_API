@@ -5,13 +5,13 @@ from rest_framework import serializers
 class ClimatSerializer(serializers.ModelSerializer):
     class Meta:
         model = Climat
-        fields = ["name"]
+        fields = ["name",]
 
 
 class ContinetSerializer(serializers.ModelSerializer):
     class Meta:
         model = Continent
-        fields = ["name"]
+        fields = ["name",]
 
 
 class CountrySerializer(serializers.ModelSerializer):

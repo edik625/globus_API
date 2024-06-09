@@ -6,10 +6,10 @@ from rest_framework.routers import DefaultRouter
 router = DefaultRouter()
 router.register(r'climat', ClimatViewSet)
 router.register(r'continent', ContinentViewSet)
-router.register(r'country', ContinentViewSet)
+router.register(r'country', CountryViewSet)
 
 
 urlpatterns = [
-    path('', include(router.urls))
+    path('', include(router.urls)),
 ]
 
