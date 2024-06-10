@@ -21,7 +21,12 @@ class CountryViewSet(viewsets.ModelViewSet):
     serializer_class = CountrySerializer
 
 
-
-
+# def gets(request,name):
+#     if request.method == 'GET':
+#         country = Country.objects.get(name=name)
+#         serializer = CountrySerializer(country)
+#         return Response(serializer.data)
+#     else:
+#         return Response({'error':'country not found'})
 
     
