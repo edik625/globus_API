@@ -19,14 +19,7 @@ class ContinentViewSet(viewsets.ModelViewSet):
 class CountryViewSet(viewsets.ModelViewSet):
     queryset = Country.objects.all()
     serializer_class = CountrySerializer
+    filterset_fields = ['name','continent']
 
-
-# def gets(request,name):
-#     if request.method == 'GET':
-#         country = Country.objects.get(name=name)
-#         serializer = CountrySerializer(country)
-#         return Response(serializer.data)
-#     else:
-#         return Response({'error':'country not found'})
 
     
